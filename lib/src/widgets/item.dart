@@ -13,6 +13,7 @@ class Item extends StatelessWidget {
   final double? paddingAll;
   final bool trailingSpace;
   final BoxDecoration? boxDecoration;
+  final EdgeInsets? padding;
 
   const Item({
     Key? key,
@@ -25,6 +26,8 @@ class Item extends StatelessWidget {
     this.leadingPadding = 12,
     this.trailingSpace = true,
     this.boxDecoration,
+    this.padding,
+
   }) : super(key: key);
 
   @override
@@ -35,6 +38,7 @@ class Item extends StatelessWidget {
     }
     return Container(
       margin: EdgeInsets.all(paddingAll!),
+      padding: padding,
       decoration: boxDecoration,
       child: Center(
         child: Row(

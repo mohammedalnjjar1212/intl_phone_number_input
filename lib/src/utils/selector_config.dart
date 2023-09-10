@@ -30,7 +30,7 @@ class SelectorConfig {
   /// Space before the flag icon
   final double? leadingPadding;
   final double? paddingAll;
-
+  final EdgeInsets padding ;
   /// Add white space for short dial code
   final bool trailingSpace;
 
@@ -50,5 +50,6 @@ class SelectorConfig {
     this.useBottomSheetSafeArea = false,
     this.boxDecorationSelector =const BoxDecoration(),
     this.paddingAll =0,
+    this.padding =EdgeInsets.zero,
   });
 }
