@@ -30,7 +30,7 @@ class SelectorConfig {
   /// Space before the flag icon
   final double? leadingPadding;
   final double? paddingAll;
-  final EdgeInsets padding ;
+  final EdgeInsetsGeometry padding ;
   /// Add white space for short dial code
   final bool trailingSpace;
 
