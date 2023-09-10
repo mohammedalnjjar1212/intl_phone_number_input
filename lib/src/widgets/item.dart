@@ -36,23 +36,25 @@ class Item extends StatelessWidget {
     return Container(
       margin: EdgeInsets.all(paddingAll!),
       decoration: boxDecoration,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.start,
-        mainAxisSize: MainAxisSize.min,
-        children: <Widget>[
-          SizedBox(width: leadingPadding),
-          _Flag(
-            country: country,
-            showFlag: showFlag,
-            useEmoji: useEmoji,
-          ),
-          SizedBox(width: 12.0),
-          Text(
-            '$dialCode',
-            textDirection: TextDirection.ltr,
-            style: textStyle,
-          ),
-        ],
+      child: Center(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            SizedBox(width: leadingPadding),
+            _Flag(
+              country: country,
+              showFlag: showFlag,
+              useEmoji: useEmoji,
+            ),
+            SizedBox(width: 12.0),
+            Text(
+              '$dialCode',
+              textDirection: TextDirection.ltr,
+              style: textStyle,
+            ),
+          ],
+        ),
       ),
     );
   }
