@@ -13,7 +13,7 @@ class Item extends StatelessWidget {
   final double? paddingAll;
   final bool trailingSpace;
   final BoxDecoration? boxDecoration;
-  final EdgeInsets? padding;
+  final EdgeInsetsGeometry? padding;
 
   const Item({
     Key? key,

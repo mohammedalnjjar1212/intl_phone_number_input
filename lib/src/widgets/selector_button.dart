@@ -122,7 +122,7 @@ class SelectorButton extends StatelessWidget {
           trailingSpace: selectorConfig.trailingSpace,
           boxDecoration: selectorConfig.boxDecorationSelector,
           paddingAll: selectorConfig.paddingAll,
-          padding: selectorConfig.padding,
+          padding: selectorConfig?.padding,
         ),
       );
     }).toList();
