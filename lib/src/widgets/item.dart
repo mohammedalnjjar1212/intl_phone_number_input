@@ -10,7 +10,9 @@ class Item extends StatelessWidget {
   final TextStyle? textStyle;
   final bool withCountryNames;
   final double? leadingPadding;
+  final double? paddingAll;
   final bool trailingSpace;
+  final BoxDecoration? boxDecoration;
 
   const Item({
     Key? key,
@@ -18,9 +20,11 @@ class Item extends StatelessWidget {
     this.showFlag,
     this.useEmoji,
     this.textStyle,
+    this.paddingAll,
     this.withCountryNames = false,
     this.leadingPadding = 12,
     this.trailingSpace = true,
+    this.boxDecoration,
   }) : super(key: key);
 
   @override
@@ -30,6 +34,8 @@ class Item extends StatelessWidget {
       dialCode = dialCode.padRight(5, "   ");
     }
     return Container(
+      margin: EdgeInsets.all(paddingAll!),
+      decoration: boxDecoration,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,

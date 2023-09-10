@@ -29,12 +29,15 @@ class SelectorConfig {
 
   /// Space before the flag icon
   final double? leadingPadding;
+  final double? paddingAll;
 
   /// Add white space for short dial code
   final bool trailingSpace;
 
   /// Use safe area for selectorType=BOTTOM_SHEET
   final bool useBottomSheetSafeArea;
+
+  final BoxDecoration boxDecorationSelector ;
 
   const SelectorConfig({
     this.selectorType = PhoneInputSelectorType.DROPDOWN,
@@ -45,5 +48,7 @@ class SelectorConfig {
     this.leadingPadding,
     this.trailingSpace = true,
     this.useBottomSheetSafeArea = false,
+    this.boxDecorationSelector =const BoxDecoration(),
+    this.paddingAll =0,
   });
 }
